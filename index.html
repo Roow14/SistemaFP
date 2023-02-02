@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="pt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agenda FP</title>
+
+     <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+<!--     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/5F7B3214-ED4B-7447-A8CF-674F2E481C38/main.js" charset="UTF-8"></script> -->
+
+    <!-- ícone -->
+    <link rel="icon" href="favicon-fisiopeti.ico" type="image/ico" sizes="16x16">
+
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+</head>
+
+<style type="text/css">
+
+	.formulario {
+		max-width: 500px;
+		max-height: 700px;
+		padding: 50px 25px;
+		margin-left: auto;
+		margin-right: auto;
+		background: rgba(0,0,0,0.3);
+		box-shadow: 1px 1px 10px  #000000;
+		position: relative;
+		top: -30px;
+
+	}
+	.logo {
+		text-align: center;
+	}
+	.logo img {
+		max-width: 250px;
+	}
+	.Link {
+		color: #3399ff;
+	}
+	.Link:hover {
+		color: orange;
+	}
+	.titulo {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: #ffffff;
+		text-shadow: 2px 1px 1px #000000;
+
+	}
+	.desenvolvedor {
+		margin: 25px;
+		text-align: center;
+
+	}
+	.desenvolvedor a {
+		color: #ffffff;
+	}
+	.desenvolvedor img {
+		max-width: 150px;
+	}
+	@media only screen and (min-width: 640px) {
+		.titulo {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	@media only screen and (min-width: 768px) {
+	    .formulario {
+			margin-top: 20%;
+		}
+
+	}
+	@media only screen and (min-width: 1024px) {
+		.formulario {
+			margin-top: 5%;
+			opacity: 0.95;
+		}
+	}
+	.btn-success {
+		box-shadow: 0px 1px 10px  #000000;}
+	}
+	.form-control {
+		color: black;
+		box-shadow: 0px 1px 10px  #000000;
+	}
+	.form-group {
+		color: #ffffff;
+		text-shadow: 2px 2px 2px #000000;
+
+	}
+.back-video{
+	position: absolute ;
+	width: 100%;
+top: 0px;
+	bottom:0;
+	z-index: -1;
+
+
+}
+</style>
+
+<body>
+	<div class="formulario">
+		<form action="/fisiopeti/content/conexao/validacao.php" method="post">
+			<div class="logo">
+				<img src="img/logo-fisiopeti.png">
+			</div>
+			<h2 class="titulo">Plataforma Fisiopeti</h2>
+
+			<div class="form-group">
+				<label>Usuário:</label>
+				<input type="text" class="form-control" name="Usuario" value="" required>
+			</div>
+
+			<div class="form-group">
+				<label>Senha:</label>
+				<input type="password" class="form-control" name="Senha" value="" required>
+			</div>
+
+			<div class="form-group">
+				<label>Unidade:</label>
+				<select name="id_unidade" class="form-control" required>
+					<option value="">Selecionar</option>
+					<option value="5">Coral</option>
+					<option value="3">Jurubatuba</option>
+					<option value="1">Marco Polo</option>
+					<option value="2">Sapopemba</option>
+					<option value="2">Vila Sônia</option>
+					<option value="">Adm</option>
+				</select>
+			</div>
+
+			<button type="submit" class="btn btn-success" style="width: 100%;">Confirmar</button>
+		</form>
+		<div class="desenvolvedor">
+			<!-- <img src="img/logo-forecastweb-200-min.png"> -->
+			<p style="margin-top: 15px;"><a href="http://fisiopeti.com.br">www.fisiopeti.com.br</a></p>
+		</div>
+	</div>
+<div class="video">
+	<video autoplay loop muted playsinline class="back-video">
+		<source src="4.mp4" type="video/mp4">
+	</video>
+	
+</div>
+</body>
+</html>

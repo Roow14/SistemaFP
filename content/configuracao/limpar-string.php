@@ -1,0 +1,32 @@
+<?php
+$String = str_replace("á","a",$String);
+$String = str_replace("à","a",$String);
+$String = str_replace("é","e",$String);
+$String = str_replace("í","i",$String);
+$String = str_replace("ã","a",$String);
+$String = str_replace("õ","o",$String);
+$String = str_replace("ú","u",$String);
+$String = str_replace("ü","u",$String);
+$String = str_replace("&","",$String);
+$String = str_replace("@","",$String);
+$String = str_replace("$","",$String);
+$String = str_replace("#","",$String);
+$String = str_replace("%","",$String);
+$String = str_replace("*","",$String);
+$String = str_replace("+","",$String);
+$String = str_replace("=","",$String);
+// $String = str_replace("-","",$String);
+$String = str_replace(".","",$String);
+$String = str_replace('´',"",$String);
+$String = str_replace('"','',$String);
+$String = str_replace("'","",$String);
+$String = str_replace("`","",$String);
+$String = str_replace("ª","",$String);
+$String = str_replace("º","",$String);
+$String = str_replace(":","",$String);
+$String = str_replace(">","",$String);
+$String = str_replace("<","",$String);
+$String = str_replace(";","",$String);
+$String = str_replace(",","",$String);
+$String = preg_replace('/[^a-z0-9]+/', '-', strtolower($String));
+?>

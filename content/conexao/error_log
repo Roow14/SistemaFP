@@ -1,0 +1,7 @@
+[18-Dec-2020 09:23:25 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1226): User 'foreca52_fisio2' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home1/foreca52/public_html/fisiopeti/content/conexao/validacao.php on line 19
+[18-Dec-2020 09:31:51 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1226): User 'foreca52_fisio2' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home1/foreca52/public_html/fisiopeti/content/conexao/validacao.php on line 19
+[18-Dec-2020 09:37:44 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1226): User 'foreca52_fisio2' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home1/foreca52/public_html/fisiopeti/content/conexao/validacao.php on line 19
+[28-Dec-2020 16:48:55 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home2/fisioforeca10/public_html/fisiopeti/content/conexao/logout.php:32
+Stack trace:
+#0 {main}
+  thrown in /home2/fisioforeca10/public_html/fisiopeti/content/conexao/logout.php on line 32
